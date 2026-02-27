@@ -1,0 +1,178 @@
+<mxfile>
+  <diagram id="4f34c42b-ab71-4ab9-80f0-a63f03b20450" name="Network Plan">
+    <mxGraphModel dx="3000" dy="2000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"></mxCell>
+        <mxCell id="1" parent="0"></mxCell>
+        <mxCell id="80ecded7-afec-4a58-b9d5-7f858b55b863" value="&lt;i&gt;_gateway&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.1&lt;/strong&gt;&lt;br&gt;MAC: 00:58:28:66:32:27&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;:53 - domain&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Cloudflare public DNS )&lt;/span&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(lighttpd )&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(lighttpd )&lt;/span&gt;&lt;br&gt;:5000 - upnp&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(MiniUPnP 2.0)&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="0" width="260" height="260" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e1312ec1-4da6-49a0-8a35-f27a01e81acd" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.3&lt;/strong&gt;&lt;br&gt;MAC: 00:58:28:41:0F:B8&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;:53 - domain&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Cloudflare public DNS )&lt;/span&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(lighttpd )&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(lighttpd )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="290" width="260" height="240" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="8c20d72c-9f21-46d2-9c03-2e37555320f8" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.4&lt;/strong&gt;&lt;br&gt;MAC: E0:46:EE:24:21:F1&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;:139 - netbios-ssn&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="560" width="260" height="200" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="7fc888de-4ad5-4bac-8761-923e195d8951" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.5&lt;/strong&gt;&lt;br&gt;MAC: 20:DF:B9:02:1F:64&lt;br&gt;&lt;br&gt;:8008 - http&lt;br&gt;:8009 - ajp13&lt;br&gt;:8443 - https-alt&lt;br&gt;:9000 - cslistener&lt;br&gt;:10001 - scp-config&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="790" width="260" height="260" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e3674b78-be5d-4489-b67c-a6e75192fc28" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.7&lt;/strong&gt;&lt;br&gt;MAC: 14:EB:B6:71:EE:5E&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="1080" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="65cc7018-eb30-4a42-8f24-fb43dbbd2a59" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.8&lt;/strong&gt;&lt;br&gt;MAC: 78:2D:7E:23:BE:D8&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;:139 - netbios-ssn&lt;br&gt;:8000 - http-alt&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="1290" width="260" height="220" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="0ae27dad-6681-4ccd-8d1c-5ba3b4bd9ca4" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.9&lt;/strong&gt;&lt;br&gt;MAC: 36:F0:0F:95:AA:5B&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 10.0)&lt;/span&gt;&lt;br&gt;:88 - kerberos-sec&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Heimdal Kerberos )&lt;/span&gt;&lt;br&gt;:5000 - rtsp&lt;br&gt;:5900 - vnc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Apple remote desktop vnc )&lt;/span&gt;&lt;br&gt;:7000 - afs3-fileserver&lt;br&gt;:49152 - &lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="1540" width="260" height="280" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="69265798-69ac-4074-9369-8c602569ddbc" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.10&lt;/strong&gt;&lt;br&gt;MAC: 24:3F:75:00:8D:82&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="0" y="1850" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="de8aad70-5ebc-4a80-b703-1714770dcb15" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.12&lt;/strong&gt;&lt;br&gt;MAC: CC:A7:C1:3B:15:F2&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="0" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="ffb0acbe-970f-43d9-84cb-cf56bee35d5a" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.13&lt;/strong&gt;&lt;br&gt;MAC: 54:07:7D:27:6B:2C&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="190" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="af3e1725-e5d5-4800-ac4b-11a60441bee6" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.14&lt;/strong&gt;&lt;br&gt;MAC: 00:15:64:07:2A:F8&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="400" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="634c18eb-437c-47a7-a81f-6a3565046e46" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.15&lt;/strong&gt;&lt;br&gt;MAC: CC:A7:C1:3B:1B:53&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="590" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="c4ab71b3-c718-495e-a009-bc874a413f03" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.18&lt;/strong&gt;&lt;br&gt;MAC: 3C:6A:9D:24:F1:A2&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="780" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="1c2b8ae2-3e87-4a21-b377-7cb074e1c070" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.19&lt;/strong&gt;&lt;br&gt;MAC: CC:A7:C1:3B:13:1F&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="970" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="027da508-54bc-4ebd-bc59-aa906dcca43f" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.22&lt;/strong&gt;&lt;br&gt;MAC: 3C:78:95:E1:05:63&lt;br&gt;&lt;br&gt;:135 - msrpc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows RPC )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows netbios-ssn )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft HTTPAPI httpd 2.0)&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="1160" width="260" height="240" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="ed94bf6b-f2a3-4741-8ef7-35386a68a05c" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.25&lt;/strong&gt;&lt;br&gt;MAC: 14:EB:B6:71:EC:F4&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="290" y="1430" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="a253c2b5-8881-4a3a-ab91-edbc0adf490b" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.27&lt;/strong&gt;&lt;br&gt;MAC: 54:07:7D:27:64:4E&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="0" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="96a8c0d0-722b-4d47-9bf6-551089d7387a" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.30&lt;/strong&gt;&lt;br&gt;MAC: CC:28:AA:44:02:45&lt;br&gt;&lt;br&gt;:135 - tcpwrapped&lt;br&gt;:139 - tcpwrapped&lt;br&gt;:445 - tcpwrapped&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="210" width="260" height="220" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="9fd84c2a-ec3f-4fba-9e63-356dd19792ca" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.31&lt;/strong&gt;&lt;br&gt;MAC: 04:9D:05:2E:67:E3&lt;br&gt;&lt;br&gt;:7 - echo&lt;br&gt;:23 - telnet&lt;br&gt;:81 - hosts2-ns&lt;br&gt;:113 - ident&lt;br&gt;:143 - imap&lt;br&gt;:631 - ipp&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(CUPS 2.3)&lt;/span&gt;&lt;br&gt;:995 - pop3s&lt;br&gt;:1000 - cadlock&lt;br&gt;:1036 - nsstp&lt;br&gt;:1058 - nim&lt;br&gt;:1723 - pptp&lt;br&gt;:2003 - finger&lt;br&gt;:3000 - ppp&lt;br&gt;:4001 - newoak&lt;br&gt;:4045 - lockd&lt;br&gt;:5000 - rtsp&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(AirTunes rtspd 775.3.1)&lt;/span&gt;&lt;br&gt;:5001 - commplex-link&lt;br&gt;:7000 - afs3-fileserver&lt;br&gt;:8008 - http&lt;br&gt;:8031 - &lt;br&gt;:9102 - jetdirect&lt;br&gt;:32771 - sometimes-rpc5&lt;br&gt;:49153 - &lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="460" width="260" height="620" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="96db7727-c016-48d0-a806-8795726d8212" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.34&lt;/strong&gt;&lt;br&gt;MAC: 18:4A:53:07:00:5E&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="1110" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="6f06b6c7-f90d-486f-bb5b-918bf8b9ba01" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.35&lt;/strong&gt;&lt;br&gt;MAC: A8:16:9D:A9:31:BE&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="1300" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="ef5018c2-4084-4599-b2f5-8a48a11de5c4" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.39&lt;/strong&gt;&lt;br&gt;MAC: 9A:C3:E9:31:B8:B6&lt;br&gt;&lt;br&gt;:5000 - tcpwrapped&lt;br&gt;:7000 - afs3-fileserver&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="1490" width="260" height="200" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="60867ffe-5387-4007-a7df-7ef748fe084d" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.42&lt;/strong&gt;&lt;br&gt;MAC: 6E:82:CA:E6:3A:14&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="1720" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="f89ee1ed-5a36-45f8-9b8f-9da880e24642" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.51&lt;/strong&gt;&lt;br&gt;MAC: B4:17:A8:CA:81:46&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="580" y="1910" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="53da1d23-bbe7-4e69-b96e-52f09cc56e58" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.63&lt;/strong&gt;&lt;br&gt;MAC: B8:16:5F:85:1D:6E&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="0" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="dae209d8-3764-462e-a627-329bd33e0a5d" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.66&lt;/strong&gt;&lt;br&gt;MAC: 4C:6B:B8:41:8C:CA&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="190" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="ebae7141-74b7-4a4a-863e-f2bb4b6661c2" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.67&lt;/strong&gt;&lt;br&gt;MAC: 3C:C5:DD:D6:A2:39&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="380" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="88191f93-305f-44d9-9baf-907165de0ab4" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.69&lt;/strong&gt;&lt;br&gt;MAC: 3C:C5:DD:D6:0B:3B&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="570" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="5989f916-3841-453f-908b-5eb081fa0724" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.77&lt;/strong&gt;&lt;br&gt;MAC: EC:B5:FA:B0:E5:79&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:8080 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Web-Based Enterprise Management CIM serverOpenPegasus WBEM httpd )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="760" width="260" height="220" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="2af90307-deda-4769-87e2-b0138fdfad7e" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.87&lt;/strong&gt;&lt;br&gt;MAC: CC:A7:C1:3B:27:49&lt;br&gt;&lt;br&gt;:1058 - nim&lt;br&gt;:3000 - ppp&lt;br&gt;:8008 - http&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="1010" width="260" height="220" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="8c157faf-b40c-4552-a4af-05200e16ae8a" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.101&lt;/strong&gt;&lt;br&gt;MAC: CC:A7:C1:3B:21:BD&lt;br&gt;&lt;br&gt;:2161 - apc-agent&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="1260" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="8799a339-d871-4cfa-ad50-90a388a05fc2" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.102&lt;/strong&gt;&lt;br&gt;MAC: EC:B5:FA:99:87:32&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:8080 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Web-Based Enterprise Management CIM serverOpenPegasus WBEM httpd )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="870" y="1470" width="260" height="220" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="a7f1326b-30bd-41aa-a0fd-8389ab850b66" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.105&lt;/strong&gt;&lt;br&gt;MAC: 9C:6B:00:A8:B0:E8&lt;br&gt;&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft HTTPAPI httpd 2.0)&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="0" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="5bf80176-2844-47ce-9f80-791c92d89c54" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.109&lt;/strong&gt;&lt;br&gt;MAC: 74:56:3C:B4:77:B4&lt;br&gt;&lt;br&gt;:135 - msrpc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows RPC )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows netbios-ssn )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft HTTPAPI httpd 2.0)&lt;/span&gt;&lt;br&gt;:49152 - tcpwrapped&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="210" width="260" height="260" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="195291b8-98f1-41b6-815d-9f12c39e769f" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.112&lt;/strong&gt;&lt;br&gt;MAC: 00:1A:19:3E:05:C8&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="500" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="84820d7f-c47d-4bbd-affe-db4ceee6ae45" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.113&lt;/strong&gt;&lt;br&gt;MAC: A8:9C:6C:5E:2D:C8&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Dropbear sshd )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="690" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="b4c7e4bd-ff8f-41f5-b1d8-b331e6fd332b" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.114&lt;/strong&gt;&lt;br&gt;MAC: 3C:78:95:E1:07:A6&lt;br&gt;&lt;br&gt;:135 - msrpc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows RPC )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows netbios-ssn )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft HTTPAPI httpd 2.0)&lt;/span&gt;&lt;br&gt;:7070 - realserver&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="900" width="260" height="260" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="7c097a58-2070-4535-84b3-cda38488fbd5" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.115&lt;/strong&gt;&lt;br&gt;MAC: 48:A2:E6:DC:DE:8C&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(lighttpd 1.4.54)&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(lighttpd 1.4.54)&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="1190" width="260" height="200" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="8a122d5d-4f69-42d3-97b3-1d1f7e8d660e" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.122&lt;/strong&gt;&lt;br&gt;MAC: A8:9C:6C:5E:2E:C4&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Dropbear sshd )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="1420" width="260" height="180" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="f8b604c6-beb3-45c5-8270-f065bc3314c1" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.197&lt;/strong&gt;&lt;br&gt;MAC: 20:A5:CB:CD:4B:50&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 10.2)&lt;/span&gt;&lt;br&gt;:88 - kerberos-sec&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Heimdal Kerberos )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:5000 - rtsp&lt;br&gt;:5900 - vnc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Apple remote desktop vnc )&lt;/span&gt;&lt;br&gt;:7000 - afs3-fileserver&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1160" y="1630" width="260" height="280" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="9721341f-129a-4db9-89f3-9bf1a1ed3367" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.198&lt;/strong&gt;&lt;br&gt;MAC: D0:11:E5:26:ED:9A&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 10.2)&lt;/span&gt;&lt;br&gt;:88 - kerberos-sec&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Heimdal Kerberos )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:5000 - rtsp&lt;br&gt;:5900 - vnc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Apple remote desktop vnc )&lt;/span&gt;&lt;br&gt;:7000 - afs3-fileserver&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="0" width="260" height="280" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="619b3b59-e2f1-4f96-9367-942400b6bf24" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.201&lt;/strong&gt;&lt;br&gt;MAC: 90:09:D0:43:F0:E3&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 8.2)&lt;/span&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:111 - rpcbind&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:445 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:873 - rsync&lt;br&gt;:2049 - rpcbind&lt;br&gt;:4045 - rpcbind&lt;br&gt;:5000 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5001 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="310" width="260" height="400" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="82124a00-84ec-41d1-b121-fbe483a026b1" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.202&lt;/strong&gt;&lt;br&gt;MAC: 90:09:D0:3C:98:79&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 8.2)&lt;/span&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:111 - rpcbind&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:445 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:873 - rsync&lt;br&gt;:2049 - rpcbind&lt;br&gt;:4045 - rpcbind&lt;br&gt;:5000 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5001 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="740" width="260" height="400" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="3afdb284-167b-4b35-bf19-41bbf126460c" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.206&lt;/strong&gt;&lt;br&gt;MAC: 90:09:D0:7C:37:4B&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 8.2)&lt;/span&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:445 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:5000 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5001 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:8000 - nagios-nsca&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Nagios NSCA )&lt;/span&gt;&lt;br&gt;:8080 - http-proxy&lt;br&gt;:8443 - nagios-nsca&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Nagios NSCA )&lt;/span&gt;&lt;br&gt;:9000 - cslistener&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="1170" width="260" height="400" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="e2c746fa-c1e5-4950-bcca-d1355bea8076" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.207&lt;/strong&gt;&lt;br&gt;MAC: 90:09:D0:89:8E:9E&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 8.2)&lt;/span&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:445 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:5000 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5001 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:8000 - nagios-nsca&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Nagios NSCA )&lt;/span&gt;&lt;br&gt;:8080 - http-proxy&lt;br&gt;:8443 - nagios-nsca&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Nagios NSCA )&lt;/span&gt;&lt;br&gt;:9000 - cslistener&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="1600" width="260" height="400" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="ba49debc-1b2d-40d8-a67d-b616f65cf2cb" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.211&lt;/strong&gt;&lt;br&gt;MAC: 02:11:32:2F:92:0E&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 8.9p1 Ubuntu 3ubuntu0.10)&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:445 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="2030" width="260" height="220" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="3e1edf48-3efd-4d2d-9296-386040f14ecb" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.213&lt;/strong&gt;&lt;br&gt;MAC: 7C:2E:0D:15:57:6C&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="2280" width="260" height="160" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="8960678b-b0a0-4980-adc1-82a44ab8e389" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.215&lt;/strong&gt;&lt;br&gt;MAC: 7C:2E:0D:1E:CA:EA&lt;br&gt;&lt;br&gt;:21 - ftp&lt;br&gt;:80 - http&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:5357 - wsdapi&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1450" y="2470" width="260" height="240" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="c0f6a0a6-ed9d-400c-9c52-81b7d92026e8" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.216&lt;/strong&gt;&lt;br&gt;MAC: 7C:2E:0D:A7:ED:C1&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;:5357 - wsdapi&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="0" width="260" height="200" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="162d2b30-d45e-4ccd-a84a-4754013fa3fa" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.221&lt;/strong&gt;&lt;br&gt;MAC: F0:2F:74:95:57:1D&lt;br&gt;&lt;br&gt;:135 - msrpc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows RPC )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows netbios-ssn )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft HTTPAPI httpd 2.0)&lt;/span&gt;&lt;br&gt;:8000 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Node.js Express framework )&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="230" width="260" height="260" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="27085e1a-13e6-4d76-a372-bae1633b62b1" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.222&lt;/strong&gt;&lt;br&gt;MAC: 10:FF:E0:87:ED:83&lt;br&gt;&lt;br&gt;:135 - msrpc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows RPC )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows netbios-ssn )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;:4000 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Node.js Express framework )&lt;/span&gt;&lt;br&gt;:5357 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft HTTPAPI httpd 2.0)&lt;/span&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="520" width="260" height="260" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="a08895b3-d0f6-41f8-b35c-7cccbce84f1e" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.223&lt;/strong&gt;&lt;br&gt;MAC: 60:E9:AA:54:A2:9F&lt;br&gt;&lt;br&gt;:80 - soap&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(gSOAP 2.7)&lt;/span&gt;&lt;br&gt;:443 - tcpwrapped&lt;br&gt;:515 - printer&lt;br&gt;:631 - soap&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(gSOAP 2.7)&lt;/span&gt;&lt;br&gt;:8080 - soap&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(gSOAP 2.7)&lt;/span&gt;&lt;br&gt;:9100 - jetdirect&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="810" width="260" height="280" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="5883a5af-87e1-4eaa-b454-563b0e8195f2" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.230&lt;/strong&gt;&lt;br&gt;MAC: 10:FF:E0:B0:C6:D1&lt;br&gt;&lt;br&gt;:135 - msrpc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows RPC )&lt;/span&gt;&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Microsoft Windows netbios-ssn )&lt;/span&gt;&lt;br&gt;:445 - microsoft-ds&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="1120" width="260" height="220" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="1d65146b-5b9e-44e7-9747-302246173367" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.231&lt;/strong&gt;&lt;br&gt;MAC: A4:FC:14:10:9D:AD&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 10.0)&lt;/span&gt;&lt;br&gt;:88 - kerberos-sec&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Heimdal Kerberos )&lt;/span&gt;&lt;br&gt;:5000 - rtsp&lt;br&gt;:5900 - vnc&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Apple remote desktop vnc )&lt;/span&gt;&lt;br&gt;:7000 - afs3-fileserver&lt;br&gt;:49152 - &lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="1370" width="260" height="280" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="c2f42640-0c78-4869-b3f8-533c20e17ff1" value="&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.244&lt;/strong&gt;&lt;br&gt;MAC: 2C:58:B9:59:0B:3B&lt;br&gt;&lt;br&gt;:80 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:443 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:631 - http&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(nginx )&lt;/span&gt;&lt;br&gt;:9100 - jetdirect&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="1680" width="260" height="240" as="geometry"></mxGeometry>
+        </mxCell>
+        <mxCell id="6fdcf6cb-329c-44ca-8908-11e4c04dc23f" value="&lt;i&gt;SENTINEL&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;strong style=&#34;font-size: 16px&#34;&gt;192.168.0.250&lt;/strong&gt;&lt;br&gt;&lt;br&gt;:22 - ssh&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(OpenSSH 9.6p1 Ubuntu 3ubuntu13.11)&lt;/span&gt;&lt;br&gt;:80 - http&lt;br&gt;:81 - hosts2-ns&lt;br&gt;:139 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:443 - https&lt;br&gt;:445 - netbios-ssn&lt;br&gt;&lt;span style=&#34;color: #bbb&#34;&gt;(Samba smbd 4.6.2)&lt;/span&gt;&lt;br&gt;:3000 - ppp&lt;br&gt;:3389 - tcpwrapped&lt;br&gt;:8000 - http-alt&lt;br&gt;:8080 - http-proxy&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=2" parent="1" vertex="1">
+          <mxGeometry x="1740" y="1950" width="260" height="360" as="geometry"></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
